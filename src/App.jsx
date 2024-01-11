@@ -3,6 +3,7 @@ import Autosuggest from 'react-autosuggest';
 import useFetch from './hooks/useFetch';
 import LocationCard from './components/LocationCard';
 import ResidentsCard from './components/ResidentsCard';
+import header from "./assets/img/Frame.jpg"
 import './App.css'
 
 function App() {
@@ -69,7 +70,7 @@ function App() {
   return (
     <div>
       <header>
-        <img src="./public/frame.jpg" alt="Rick and Morty" />
+      <img src={header} alt=""/>
       </header>
       <form onSubmit={handleSubmit} className="center-form">
         <Autosuggest
