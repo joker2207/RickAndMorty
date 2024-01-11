@@ -1,0 +1,108 @@
+.resident__card {
+    width: 100%;
+    max-width: 320px;
+    border-radius: 0.8em;
+    overflow: hidden;
+    background-color: #062226;
+    color: white;
+    transition: transform 100ms ease, boxshadow 100ms ease;
+}
+
+.resident__card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0.2em #0008;
+}
+
+.resident__header {
+    position: relative;
+}
+
+.resident__status {
+    position: absolute;
+    top: 10%;
+    background-color: #062226;
+    width: 40%;
+    border-radius: 0 0.5em 0.5em 0;
+    padding: 0.3em;
+    padding-left: 0.7emm;
+    display: flex;
+    align-items: center;
+    gap: 0.8em;
+}
+
+.resident__status__circle {
+    width: 20px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background-color: #999;
+    background-color: rgb(22, 148, 22);
+    background-color: rgb(185, 23, 23);
+}
+.Alive{
+    background-color: rgb(22, 148, 22);
+}
+.Dead{
+    background-color: rgb(185, 23, 23);
+}
+.unknown{
+    background-color: yellow;
+}
+
+.resident__status__value {
+    font-size: 0.9rem;
+    font-weight: 300;
+}
+
+.resident__body {
+    padding: 1.5em 1em 2em;
+}
+
+.resident__name {
+    font-size: 1rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 0.5em;
+}
+
+.resident__hr {
+    margin-bottom: 1em;
+    border-color: #fff3;
+}
+
+.resident__list {
+    display: grid;
+    gap: 0.8rem;
+}
+
+.resident__item {
+    display: flex;
+    flex-direction: column;
+    font-size: 0.8rem;
+    margin-bottom: 0;
+    padding-left: 2em;
+}
+
+.resident__label {
+    padding-left: 1em;
+    color: #999;
+    font-weight: 300;
+}
+.resident__img {
+    width: 100%;
+    height: auto;
+    max-width: 100%; 
+}
+
+@media screen and (min-width: 768px) {
+    .resident__card {
+        max-width: auto; /* Ajustar a un ancho máximo para pantallas más grandes */
+    }
+
+    .resident__status {
+        width: auto; /* Para que ocupe el contenido necesario */
+    }
+
+    .resident__item {
+        padding-left: 0; /* Ajustar el espacio de relleno para pantallas más grandes */
+    }
+}

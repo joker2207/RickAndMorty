@@ -1,0 +1,45 @@
+.info__article {
+  text-align: center;
+  border: 1px solid #ccc;
+  padding: 5vw;
+  margin: 5vw;
+  background-color: #062226;
+  color: white;
+}
+
+.info-row {
+  list-style: none;
+  padding: 0;
+}
+
+.info-row li {
+  margin-bottom: 2vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.info-row span {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.location__h2 {
+  color: green;
+}
+
+@media screen and (min-width: 768px) {
+  .info__article {
+    margin: 2vw;
+    padding: 3vw;
+  }
+
+  .info-row li {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .info-row span {
+    margin-bottom: 0;
+  }
+}
